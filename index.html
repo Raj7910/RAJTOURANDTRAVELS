@@ -1,45 +1,81 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAJ TOUR AND TRAVELS</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; text-align: center; }
-        header { background-color: #0d6efd; color: white; padding: 30px 15px; }
-        h1 { margin: 0; font-size: 28px; }
-        p { font-size: 16px; }
-        .container { padding: 20px; max-width: 600px; margin: auto; }
-        .card { background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .btn { display: inline-block; padding: 12px 25px; background-color: #25d366; color: white; text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 18px; margin-top: 10px; }
-        footer { background: #222; color: #ccc; padding: 15px; font-size: 14px; margin-top: 30px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RAJ TOUR AND TRAVELS offers reliable cab, corporate pickup and drop, and local travel services in Gurgaon and nearby areas.">
+  <meta name="theme-color" content="#0b1730">
+  <title>RAJ TOUR AND TRAVELS | Reliable Cab & Corporate Transport</title>
+  <style>
+    :root{--navy:#0b1730;--navy2:#14264a;--orange:#f39b35;--green:#15945b;--ink:#172033;--muted:#667085;--paper:#f6f8fc;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    .topbar{background:#071126;color:#e8edf8;font-size:13px;padding:9px 0}.toprow{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #e8edf4;box-shadow:0 4px 18px #0b17300a}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--navy);letter-spacing:.2px}.brand img{width:58px;height:58px;object-fit:contain;border-radius:50%}.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:1.4px}
+    .links{display:flex;align-items:center;gap:22px;font-size:14px;font-weight:700}.links a:hover{color:var(--green)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--orange);color:#161b25;padding:13px 19px;border-radius:10px;font-weight:800;border:0;cursor:pointer}.btn.dark{background:var(--navy);color:#fff}.btn.green{background:var(--green);color:#fff}.btn.outline{background:transparent;border:1px solid #ffffff90;color:#fff}
+    .hero{background:radial-gradient(circle at 85% 20%,#263d68 0,#14264a 27%,#0b1730 68%);color:#fff;padding:76px 0 70px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}.eyebrow{display:inline-block;color:#ffd18e;background:#ffffff12;border:1px solid #ffffff25;border-radius:30px;padding:7px 12px;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase}.hero h1{font-size:clamp(36px,5vw,60px);line-height:1.08;margin:18px 0}.hero h1 span{color:#ffb54f}.hero p{font-size:17px;color:#d7deed;max-width:590px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.hero-note{display:flex;gap:20px;flex-wrap:wrap;margin-top:27px;color:#dce5f5;font-size:13px}.hero-note span:before{content:"✓";color:#63d69a;font-weight:bold;margin-right:7px}
+    .hero-card{background:#fff;color:var(--ink);padding:26px;border-radius:24px;box-shadow:0 24px 70px #0005;transform:rotate(1deg)}.hero-logo{display:block;width:175px;height:175px;object-fit:contain;margin:0 auto 12px}.hero-card h3{text-align:center;margin:8px 0 3px;font-size:23px;color:var(--navy)}.hero-card>p{text-align:center;color:var(--muted);font-size:14px;margin:0 0 18px}.quick-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.quick{background:var(--paper);padding:13px;border-radius:12px;font-size:13px;font-weight:700}.quick b{display:block;color:var(--green);font-size:12px;margin-bottom:4px}
+    .trust{background:#fff;box-shadow:0 10px 30px #0b17300b;position:relative}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:22px 0;gap:18px}.trust-item{display:flex;gap:12px;align-items:center;justify-content:center}.trust-icon{width:42px;height:42px;border-radius:12px;background:#e8f7ef;color:var(--green);display:grid;place-items:center;font-size:21px}.trust-item b{display:block;font-size:14px}.trust-item small{color:var(--muted)}
+    section{padding:76px 0}.section-head{text-align:center;max-width:690px;margin:0 auto 38px}.section-head .kicker{color:var(--green);font-size:12px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase}.section-head h2{font-size:clamp(28px,3.5vw,40px);line-height:1.15;color:var(--navy);margin:9px 0 12px}.section-head p{color:var(--muted);margin:0}
+    .services{background:var(--paper)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:#fff;padding:25px;border:1px solid #e9edf4;border-radius:18px;box-shadow:0 10px 25px #0b173006}.service-icon{width:52px;height:52px;border-radius:15px;background:#fff1df;display:grid;place-items:center;font-size:26px;margin-bottom:17px}.service h3{color:var(--navy);margin:0 0 8px}.service p{color:var(--muted);font-size:14px;margin:0}
+    .fleet-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.fleet{border:1px solid #e4e9f1;border-radius:18px;padding:26px;display:flex;gap:20px;align-items:center}.car-icon{width:88px;height:76px;background:#eef3fb;border-radius:16px;display:grid;place-items:center;font-size:42px;flex-shrink:0}.fleet h3{margin:0;color:var(--navy)}.fleet p{margin:5px 0;color:var(--muted);font-size:14px}.pill{display:inline-block;border-radius:20px;background:#e8f7ef;color:#137849;font-size:12px;font-weight:800;padding:4px 9px}
+    .why{background:var(--navy);color:#fff}.why .section-head h2{color:#fff}.why .section-head p{color:#c4cee0}.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.why-card{padding:20px;border:1px solid #ffffff22;border-radius:16px;background:#ffffff08}.why-card b{display:block;font-size:16px;margin:10px 0 5px}.why-card p{font-size:13px;color:#c4cee0;margin:0}.why-card span{font-size:25px}
+    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:start}.contact-panel{background:var(--navy);color:#fff;border-radius:22px;padding:30px}.contact-panel h3{font-size:25px;margin:0 0 8px}.contact-panel p{color:#d0d8e8}.contact-row{padding:14px 0;border-bottom:1px solid #ffffff20}.contact-row:last-child{border:0}.contact-row small{display:block;color:#aebbd2;font-size:12px}.contact-row a,.contact-row strong{font-weight:700}.contact-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.contact-form{border:1px solid #e4e9f1;border-radius:22px;padding:28px;box-shadow:0 12px 35px #0b173008}.contact-form h3{margin:0 0 18px;color:var(--navy)}label{display:block;font-size:13px;font-weight:700;margin:13px 0 6px}input,select,textarea{width:100%;padding:13px;border:1px solid #d9e0eb;border-radius:9px;font:inherit;font-size:14px;background:#fff}textarea{min-height:95px;resize:vertical}.contact-form .btn{width:100%;margin-top:16px}
+    footer{background:#071126;color:#cbd4e5;padding:28px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap;font-size:13px}.footer-brand{color:#fff;font-weight:800}.footer-links{display:flex;gap:16px;flex-wrap:wrap}
+    .float{position:fixed;right:16px;bottom:16px;z-index:20;background:#15945b;color:#fff;border-radius:50px;padding:13px 17px;font-weight:800;box-shadow:0 8px 25px #0003}
+    @media(max-width:800px){.links{display:none}.hero{padding:50px 0}.hero-grid,.contact-grid{grid-template-columns:1fr}.hero-card{max-width:430px;margin:auto;transform:none}.cards{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr 1fr}.trust-grid{grid-template-columns:1fr}.trust-item{justify-content:flex-start}.fleet-grid{grid-template-columns:1fr}}
+    @media(max-width:460px){.brand img{width:48px;height:48px}.brand{font-size:14px}.hero h1{font-size:38px}.why-grid{grid-template-columns:1fr}.fleet{padding:18px;gap:12px}.car-icon{width:65px;height:65px;font-size:32px}.contact-panel,.contact-form{padding:22px}}
+  </style>
 </head>
 <body>
-
-    <header>
-        <h1>RAJ TOUR AND TRAVELS</h1>
-        <p>Aapki Yatra, Hamari Zimmedari</p>
-    </header>
-
-    <div class="container">
-        <div class="card">
-            <h2>Hamari Services</h2>
-            <p>🚖 Outstation & Local Taxi Service</p>
-            <p>🚘 Airport Pick & Drop</p>
-            <p>🚙 Corporate & Daily Rentals</p>
-        </div>
-
-        <div class="card">
-            <h2>Sampark Karein</h2>
-            <p>📍 DLF Phase - 4, Gurgaon, Haryana</p>
-            <a href="https://wa.me/919999999999" class="btn">WhatsApp Par Baat Karein</a>
-        </div>
-    </div>
-
-    <footer>
-        <p>© RAJ TOUR AND TRAVELS - All Rights Reserved</p>
-    </footer>
-
+  <div class="topbar"><div class="wrap toprow"><span>📍 Gurgaon, Haryana</span><span>Corporate Pickup & Drop • Local & Outstation Cab Services</span></div></div>
+  <header><div class="wrap nav">
+    <a class="brand" href="#home"><img src="logo.png" alt="RAJ TOUR AND TRAVELS logo"><span>RAJ TOUR AND TRAVELS<small>YOUR JOURNEY, OUR RESPONSIBILITY</small></span></a>
+    <nav class="links"><a href="#home">Home</a><a href="#services">Services</a><a href="#fleet">Our Cabs</a><a href="#contact">Contact</a></nav>
+    <a class="btn" href="tel:9990107910">☎ Call for Booking</a>
+  </div></header>
+  <main>
+    <section class="hero" id="home"><div class="wrap hero-grid">
+      <div><span class="eyebrow">Reliable • Comfortable • Professional</span><h1>Your Journey,<br><span>Our Responsibility.</span></h1>
+        <p>Dependable cab and corporate transportation services in Gurgaon and nearby areas. We help make everyday commutes, employee pickup & drop, and travel easier.</p>
+        <div class="hero-actions"><a class="btn" href="#contact">Book a Cab →</a><a class="btn outline" href="https://wa.me/919990107910?text=Hello%20RAJ%20TOUR%20AND%20TRAVELS%2C%20I%20want%20to%20enquire%20about%20cab%20booking." target="_blank" rel="noopener">WhatsApp Us</a></div>
+        <div class="hero-note"><span>Corporate pickup & drop</span><span>SUV and Sedan cabs</span><span>Booking support</span></div>
+      </div>
+      <div class="hero-card"><img class="hero-logo" src="logo.png" alt="RAJ TOUR AND TRAVELS emblem"><h3>Travel with Confidence</h3><p>Professional transport solutions for your daily journey.</p><div class="quick-grid"><div class="quick"><b>01 / CORPORATE</b>Employee transport</div><div class="quick"><b>02 / DAILY</b>Pickup & drop</div><div class="quick"><b>03 / CAB OPTIONS</b>SUV and Sedan</div><div class="quick"><b>04 / LOCATION</b>Gurgaon & nearby</div></div></div>
+    </div></section>
+    <div class="trust"><div class="wrap trust-grid"><div class="trust-item"><span class="trust-icon">✓</span><div><b>Customer-focused service</b><small>Support for your travel needs</small></div></div><div class="trust-item"><span class="trust-icon">🚘</span><div><b>Cab choices</b><small>SUV 6+1 and Sedan 4+1</small></div></div><div class="trust-item"><span class="trust-icon">📍</span><div><b>Gurgaon-based</b><small>Local and corporate travel</small></div></div></div></div>
+    <section class="services" id="services"><div class="wrap"><div class="section-head"><span class="kicker">What We Do</span><h2>Transport Services That Fit Your Needs</h2><p>Choose a practical travel solution for your office commute, regular pickup & drop, or cab requirement.</p></div>
+      <div class="cards"><article class="service"><div class="service-icon">🏢</div><h3>Corporate Transportation</h3><p>Transportation support for companies and employee commute requirements.</p></article><article class="service"><div class="service-icon">🔁</div><h3>Pickup & Drop</h3><p>Planned pickup and drop services for regular routes. Route and schedule can be discussed during booking.</p></article><article class="service"><div class="service-icon">🚖</div><h3>Cab Booking</h3><p>Enquire about available SUV and Sedan cabs for your travel needs.</p></article></div>
+    </div></section>
+    <section id="fleet"><div class="wrap"><div class="section-head"><span class="kicker">Our Fleet Options</span><h2>Choose Your Cab</h2><p>Contact us to confirm vehicle availability, route, schedule and fare.</p></div>
+      <div class="fleet-grid"><article class="fleet"><div class="car-icon">🚙</div><div><h3>SUV Cab <span class="pill">6+1 Seater</span></h3><p>Suitable for group travel and selected corporate routes.</p><a class="btn dark" href="https://wa.me/919990107910?text=Hello%2C%20please%20share%20SUV%20cab%20availability%20and%20rates." target="_blank" rel="noopener">Enquire about SUV</a></div></article><article class="fleet"><div class="car-icon">🚘</div><div><h3>Sedan Cab <span class="pill">4+1 Seater</span></h3><p>A practical option for everyday commutes and smaller groups.</p><a class="btn dark" href="https://wa.me/919990107910?text=Hello%2C%20please%20share%20Sedan%20cab%20availability%20and%20rates." target="_blank" rel="noopener">Enquire about Sedan</a></div></article></div>
+    </div></section>
+    <section class="why"><div class="wrap"><div class="section-head"><span class="kicker">Why Choose Us</span><h2>A Simpler Way to Plan Your Ride</h2><p>Clear communication and service tailored to your route and schedule.</p></div><div class="why-grid"><div class="why-card"><span>📞</span><b>Easy Enquiry</b><p>Call or message us to discuss your requirement.</p></div><div class="why-card"><span>🗓️</span><b>Planned Service</b><p>Discuss pickup times, drop points and working days.</p></div><div class="why-card"><span>🚗</span><b>Vehicle Options</b><p>Ask about SUV and Sedan cab availability.</p></div><div class="why-card"><span>🤝</span><b>Business-focused</b><p>Transport support for corporate and regular travel needs.</p></div></div></div></section>
+    <section id="contact"><div class="wrap"><div class="section-head"><span class="kicker">Get in Touch</span><h2>Plan Your Next Journey</h2><p>Share your route and travel requirement. We’ll help you with the next step.</p></div><div class="contact-grid">
+      <div class="contact-panel"><h3>RAJ TOUR AND TRAVELS</h3><p>Your journey, our responsibility.</p>
+        <div class="contact-row"><small>BOOKING CONTACT</small><a href="tel:9990107910">+91 99901 07910</a></div>
+        <div class="contact-row"><small>ADDITIONAL CONTACT</small><a href="tel:9990577910">+91 99905 77910</a> · <a href="tel:8787275903">+91 87872 75903</a></div>
+        <div class="contact-row"><small>EMAIL</small><a href="mailto:rrajtourandtravels@gmail.com">rrajtourandtravels@gmail.com</a></div>
+        <div class="contact-row"><small>OFFICE ADDRESS</small><strong>C-042C, 4th Floor, Super Mart-1, DLF Phase-4, Gurgaon, Haryana 122009</strong></div>
+        <div class="contact-actions"><a class="btn green" href="https://wa.me/919990107910" target="_blank" rel="noopener">WhatsApp</a><a class="btn outline" href="https://www.google.com/maps/search/?api=1&query=C-042C%2C%20Super%20Mart-1%2C%20DLF%20Phase-4%2C%20Gurgaon%2C%20Haryana%20122009" target="_blank" rel="noopener">Find Us on Maps</a></div>
+      </div>
+      <form class="contact-form" id="bookingForm"><h3>Quick Booking Enquiry</h3><label for="name">Your Name</label><input id="name" name="name" required placeholder="Enter your name"><label for="phone">Mobile Number</label><input id="phone" name="phone" type="tel" required placeholder="Enter your mobile number"><label for="service">Service Required</label><select id="service" name="service"><option>Corporate Pickup & Drop</option><option>SUV Cab (6+1)</option><option>Sedan Cab (4+1)</option><option>Other Cab Enquiry</option></select><label for="route">Pickup / Drop Route</label><textarea id="route" name="route" placeholder="Enter pickup location, drop location and timing"></textarea><button class="btn" type="submit">Send Enquiry on WhatsApp →</button><p style="font-size:12px;color:#667085;margin-bottom:0">This form opens WhatsApp with your enquiry details. It does not submit data to a website server.</p></form>
+    </div></div></section>
+  </main>
+  <footer><div class="wrap footer-row"><div><div class="footer-brand">RAJ TOUR AND TRAVELS</div><div>Your Journey, Our Responsibility.</div></div><div class="footer-links"><a href="#home">Home</a><a href="#services">Services</a><a href="#fleet">Our Cabs</a><a href="#contact">Contact</a></div><div>© <span id="year"></span> RAJ TOUR AND TRAVELS</div></div></footer>
+  <a class="float" href="https://wa.me/919990107910?text=Hello%20RAJ%20TOUR%20AND%20TRAVELS%2C%20I%20want%20to%20book%20a%20cab." target="_blank" rel="noopener">WhatsApp Booking</a>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('bookingForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value.trim();
+      const phone=document.getElementById('phone').value.trim();
+      const service=document.getElementById('service').value;
+      const route=document.getElementById('route').value.trim();
+      const msg=`Hello RAJ TOUR AND TRAVELS, I would like to make an enquiry.%0AName: ${encodeURIComponent(name)}%0AMobile: ${encodeURIComponent(phone)}%0AService: ${encodeURIComponent(service)}%0ARoute/Timing: ${encodeURIComponent(route || 'Not specified')}`;
+      window.open('https://wa.me/919990107910?text='+msg,'_blank','noopener');
+    });
+  </script>
 </body>
 </html>
